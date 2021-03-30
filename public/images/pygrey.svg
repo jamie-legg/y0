@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+viewBox="0 0 170 18.96"><defs>
+<style>.cls-1,.cls-4
+{opacity:1;fill:#ffffff;}
+.cls-1{font-size:17px;font-family:Primus-Bold, Primus;font-weight:700;}
+.cls-2{letter-spacing:-0.01em;}
+.cls-3{letter-spacing:0em;}</style>
+<symbol id="Project_Y_Text"
+ data-name="Project Y Text" 
+ viewBox="0 0 170 18.96"><text class="cls-1" 
+ transform="translate(34.72 15.04)">PROJECT Y</text><path class="cls-4" d="M1,8.11H29a1,1,0,0,1,1,1h0a1,1,0,0,1-1,1H1a1,1,0,0,1-1-1H0A1,1,0,0,1,1,8.11Z"/><path class="cls-4" d="M141,8.11h28a1,1,0,0,1,1,1h0a1,1,0,0,1-1,1H141a1,1,0,0,1-1-1h0A1,1,0,0,1,141,8.11Z"/></symbol></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><use width="170" height="18.96" xlink:href="#Project_Y_Text"/></g></g></svg>
