@@ -17,12 +17,12 @@ import Link from 'next/link';
 const navigation = [
     { name: 'Home', href: '/', icon: HomeIcon, current: true },
     { name: 'My world', href: '/myworld', icon: ViewListIcon, current: false },
-    { name: 'Recent', href: '#', icon: ClockIcon, current: false },
+    { name: 'Recent', href: '/recent', icon: ClockIcon, current: false },
   ]
   const worlds = [
-    { name: 'Project Y', href: '#', bgColorClass: 'bg-y-1' },
-    { name: 'Fiyestas', href: '#', bgColorClass: 'bg-y-2' },
-    { name: 'The Sauna', href: '#', bgColorClass: 'bg-y-3' },
+    { name: 'Project Y', href: '/w/projecty', bgColorClass: 'bg-y-1' },
+    { name: 'Fiyestas', href: '/w/fiyestas', bgColorClass: 'bg-y-2' },
+    { name: 'The Sauna', href: '/w/thesauna', bgColorClass: 'bg-y-3' },
   ]
 
   function classNames(...classes) {
@@ -120,18 +120,19 @@ export default function Layout({ children, user }):JSX.Element {
                       Teams
                     </h3>
                     <div className="mt-1 space-y-1" role="group" aria-labelledby="teams-headline">
-                      {worlds.map((team) => (
+                      {worlds.map((world) => (
+                        <Link href={world.href}>
                         <a
-                          key={team.name}
-                          href={team.href}
+                          key={world.name}
                           className="group flex items-center px-3 py-2 text-base leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
                         >
                           <span
-                            className={classNames(team.bgColorClass, 'w-2.5 h-2.5 mr-4 rounded-full')}
+                            className={classNames(world.bgColorClass, 'w-2.5 h-2.5 mr-4 rounded-full')}
                             aria-hidden="true"
                           />
-                          <span className="truncate">{team.name}</span>
+                          <span className="truncate">{world.name}</span>
                         </a>
+                        </Link>
                       ))}
                     </div>
                   </div>
