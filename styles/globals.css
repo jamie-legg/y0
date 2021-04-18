@@ -1,12 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+import ''
+
+
+@font-face {
+  font-family: 'Primus';
+  src: url('/fonts/Primus Bold.otf');
+  font-weight: 600;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'Primus';
+  src: url('/fonts/Primus Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+  }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Primus, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -21,10 +37,10 @@ a {
 
 
 .masked {
-  width: 340px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 40px;
+  width: 1000px;
+  margin-left: -290px;
+  height: 100px;
+  margin-bottom: 200px;
   background-image: url(/images/swirls-small.png);
   -webkit-mask-image: url(/images/pygrey.svg);
   mask-image: url(/images/pygrey.svg);

@@ -1,10 +1,11 @@
+const colors = require("tailwindcss/colors");
 module.exports = {
   purge:['.pages/**/*.{js,ts,jsx,tsx}',
   './components/**/*/.{js,ts,jsx,tsx}'],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     colors: {
-      projecty: {
+      y: {
         1:'#C592E8',
         2:'#B699F2',
         3:'#9995DB',
@@ -21,10 +22,23 @@ module.exports = {
         DEFAULT:'#ffffff'
       },
       dark:{
+        1: '#fafafa',
         5:'#111111'
       },
       green: {
         DEFAULT:'#00ff00'
+      },
+      gray: {
+        50: colors.gray[50],
+        100: colors.gray[100],
+        200: colors.gray[200],
+        300: colors.gray[300],
+        400: colors.gray[400],
+        500: colors.gray[500],
+        600: colors.gray[600],
+        700: colors.gray[700],
+        800: colors.gray[800],
+        900: colors.gray[900]
       }
     },
     extend: {},
