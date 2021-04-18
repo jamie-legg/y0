@@ -1,3 +1,5 @@
+import Button from "../components/button/button";
+
 export default function MyWorld(props) {
     return (
         <main className="flex-1 relative z-0 overflow-y-auto focus:outline-none">
@@ -8,12 +10,7 @@ export default function MyWorld(props) {
                 <h1 className="text-lg font-medium leading-6 text-gray-900 sm:truncate">My World</h1>
             </div>
             <div className="mt-4 flex sm:mt-0 sm:ml-4">
-          <button
-            type="button"
-            className="order-0 inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-y-1 hover:bg-y-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-y-3 sm:order-1 sm:ml-3"
-          >
-            Save
-              </button>
+            <Button text="Save" colour={2} click={() => console.log('test')} />
         </div>
         </div>
 

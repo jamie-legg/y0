@@ -1,12 +1,14 @@
 import Layout from '../components/layout/Layout';
-import '../styles/'
 import '../styles/globals.css';
+import { ThemeProvider } from "next-themes";
 
 function ProjectY({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <ThemeProvider attribute="class">
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </ThemeProvider>
   )
 }
 

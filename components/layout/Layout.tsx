@@ -91,19 +91,14 @@ export default function Layout({ children, user }):JSX.Element {
                   alt="Workflow"
                 />
               </div>
-              <div className="mt-5 flex-1 h-0 overflow-y-auto">
+              <div className="mt-6 flex-1 h-0 overflow-y-auto">
                 <nav className="px-2">
                   <div className="space-y-1">
                     {navigation.map((item) => (
                       <button
                         key={item.name}
                         onClick={() => router.push(item.href)}
-                        className={classNames(
-                          item.current
-                            ? 'bg-gray-100 text-gray-900'
-                            : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50',
-                          'group flex items-center px-2 py-2 text-base leading-5 font-medium rounded-md'
-                        )}
+                        className={'text-gray-600 hover:text-gray-900 hover:bg-gray-50 group flex items-center px-2 py-2 text-base leading-5 font-medium rounded-md'}
                         aria-current={item.current ? 'page' : undefined}
                       >
                         <item.icon
