@@ -11,7 +11,7 @@ interface IW {
 
 
 export default function World(props) {
-    const [w, sW] = useState<IW>({name: "Fiyestas"});
+    const [w, sW] = useState<IW>({name: "The Sauna"});
     
     const router = useRouter()
     const { worldSlug } = router.query;
@@ -21,7 +21,6 @@ export default function World(props) {
         case "fiyestas":
             sW({name: "Fiyestas"})
     }
-    console.log(worldSlug);
     
     return (
         <Page>

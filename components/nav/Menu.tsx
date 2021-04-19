@@ -4,7 +4,6 @@ import { Transition } from '@headlessui/react'
 
 export default function Menu({user}) {
   const [ open, setOpen ] = useState(false);
-  console.log(open);
   
     return(
         <div className="relative bg-white shadow">
